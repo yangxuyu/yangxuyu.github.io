@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="为什么我要搭博客呢?我开始并没有想着搭一个个人博客,我只是想为了完成程序员练级攻略：零基础启蒙中的实践项目:  无论你用 Python，还是 Node.js，还是 PHP，做一个非常简单的 Blog 系统或是 BBS 系统.  但是我实践操作中  BBS系统在在当下中文社区,已经几乎完全被用户所抛弃.   关于Node.js和PHP的知识我基本没有学习过. 直接放弃后两个选项.  对于Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为什么我要搭博客呢?">
+<meta property="og:url" content="http://www.yangxu.xyz/2019/03/26/为什么我要搭博客呢/index.html">
+<meta property="og:site_name" content="梦蝶的博客">
+<meta property="og:description" content="为什么我要搭博客呢?我开始并没有想着搭一个个人博客,我只是想为了完成程序员练级攻略：零基础启蒙中的实践项目:  无论你用 Python，还是 Node.js，还是 PHP，做一个非常简单的 Blog 系统或是 BBS 系统.  但是我实践操作中  BBS系统在在当下中文社区,已经几乎完全被用户所抛弃.   关于Node.js和PHP的知识我基本没有学习过. 直接放弃后两个选项.  对于Python">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-06-08T20:39:52.842Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="为什么我要搭博客呢?">
+<meta name="twitter:description" content="为什么我要搭博客呢?我开始并没有想着搭一个个人博客,我只是想为了完成程序员练级攻略：零基础启蒙中的实践项目:  无论你用 Python，还是 Node.js，还是 PHP，做一个非常简单的 Blog 系统或是 BBS 系统.  但是我实践操作中  BBS系统在在当下中文社区,已经几乎完全被用户所抛弃.   关于Node.js和PHP的知识我基本没有学习过. 直接放弃后两个选项.  对于Python">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.yangxu.xyz/2019/03/26/为什么我要搭博客呢/">
+
+
+
+
+
+  <title>为什么我要搭博客呢? | 梦蝶的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梦蝶的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">这个世界上有两种人，一种是快乐的猪，一种是痛苦的人。做痛苦的人，不做快乐的猪。--苏格拉底</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/03/26/为什么我要搭博客呢/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阳煦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦蝶的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">为什么我要搭博客呢?</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-26T23:27:31+08:00">
+                2019-03-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/03/26/为什么我要搭博客呢/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/26/为什么我要搭博客呢/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="为什么我要搭博客呢"><a href="#为什么我要搭博客呢" class="headerlink" title="为什么我要搭博客呢?"></a>为什么我要搭博客呢?</h1><p>我开始并没有想着搭一个个人博客,我只是想为了完成<a href="https://time.geekbang.org/column/article/8216" target="_blank" rel="noopener">程序员练级攻略：零基础启蒙</a>中的实践项目:</p>
+<blockquote>
+<p>无论你用 Python，还是 Node.js，还是 PHP，做一个非常简单的 Blog 系统或是 BBS 系统.</p>
+</blockquote>
+<p>但是我实践操作中</p>
+<ol>
+<li><p>BBS系统在在当下中文社区,已经几乎完全被用户所抛弃. </p>
+</li>
+<li><p>关于Node.js和PHP的知识我基本没有学习过. 直接放弃后两个选项.</p>
+</li>
+<li><p>对于Python语言,我看到的攻略大多是Django+Jekyll的方法,但是这个攻略对于python的版本,Django的版本要求很苛刻.以及Django1.0系列和Django2.0系列完全就是两个Web框架,导致我也放弃了这个.</p>
+</li>
+<li><p>本来至此我已经开始打算放弃搭博客了,但在浏览网页的过程中我看到了<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="noopener">为什么你应该（从现在开始就）写博客</a>,我就继续坚持了会,在网上继续找了找别的搭博客的攻略,最终我用hexo+github搭建了这个博客.</p>
+</li>
+</ol>
+<p>虽然说我是把博客给搭出来了,但是回头看我的出发点,我并没有学会如何运用前端的知识以及学会独立搭建一个个人博客.</p>
+<h1 id="我是如何用hexo-github搭出博客"><a href="#我是如何用hexo-github搭出博客" class="headerlink" title="我是如何用hexo+github搭出博客"></a>我是如何用hexo+github搭出博客</h1><p>我是看着这篇文章:<a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a><br>学会搭博客的,在这篇文章中我自己遇到两个小坑点.</p>
+<ul>
+<li><p>站点目录下的_config.yml文件中的URL会修改两次,第一次修改成username.github.io,第二次修改成你的域名.</p>
+</li>
+<li><p>域名解析信息我用的是username.github.io及其ip共两条信息,详见<a href="https://www.jianshu.com/p/a98985b2ac24" target="_blank" rel="noopener">github博客绑定个性域名</a></p>
+</li>
+</ul>
+<h1 id="最后在说几句"><a href="#最后在说几句" class="headerlink" title="最后在说几句"></a>最后在说几句</h1><p>我是个菜鸟新手,目前这个博客还十分粗糙,后续我会慢慢补全功能吧.</p>
+<p>如果你愿意认识我,可以加我微信(yuyangxu1006),很高心认识你,朋友.</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/31/程序员练级攻略：零基础启蒙学习总结/" rel="prev" title="程序员练级攻略：零基础启蒙学习总结">
+                程序员练级攻略：零基础启蒙学习总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">阳煦</p>
+              <p class="site-description motion-element" itemprop="description">做自己认为正确的事</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yangxuyu" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.douban.com/people/75913861" target="_blank" title="Douban">
+                      
+                        <i class="fa fa-fw fa-user-circle"></i>Douban</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#为什么我要搭博客呢"><span class="nav-number">1.</span> <span class="nav-text">为什么我要搭博客呢?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我是如何用hexo-github搭出博客"><span class="nav-number">2.</span> <span class="nav-text">我是如何用hexo+github搭出博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后在说几句"><span class="nav-number">3.</span> <span class="nav-text">最后在说几句</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">阳煦</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zU1etowok6uAFkzdsfCmkMks-gzGzoHsz',
+        appKey: 'GRHcnkdFMMFrCEAiqIBmQJcE',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
