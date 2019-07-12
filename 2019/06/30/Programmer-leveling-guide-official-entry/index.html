@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="​    从这开始这个系列文章就不好写了，因为任务量太大了，会需要很多时间去阅读和消化文中材料，时间一长，反正也没有人看，就会容易懈怠，最终放弃。其次是这篇文章应该是针对Java web工程师写得，而我现在是python web实习生，所以我在内容上做了一些舍弃。 下面就开始总结吧： 起手就是一篇关于拐点得文章  “The Key To Accelerating Your Coding Skill">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序员练级攻略：正式入门学习总结">
+<meta property="og:url" content="http://www.yangxu.xyz/2019/06/30/Programmer-leveling-guide-official-entry/index.html">
+<meta property="og:site_name" content="梦蝶的博客">
+<meta property="og:description" content="​    从这开始这个系列文章就不好写了，因为任务量太大了，会需要很多时间去阅读和消化文中材料，时间一长，反正也没有人看，就会容易懈怠，最终放弃。其次是这篇文章应该是针对Java web工程师写得，而我现在是python web实习生，所以我在内容上做了一些舍弃。 下面就开始总结吧： 起手就是一篇关于拐点得文章  “The Key To Accelerating Your Coding Skill">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-12T17:54:30.711Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="程序员练级攻略：正式入门学习总结">
+<meta name="twitter:description" content="​    从这开始这个系列文章就不好写了，因为任务量太大了，会需要很多时间去阅读和消化文中材料，时间一长，反正也没有人看，就会容易懈怠，最终放弃。其次是这篇文章应该是针对Java web工程师写得，而我现在是python web实习生，所以我在内容上做了一些舍弃。 下面就开始总结吧： 起手就是一篇关于拐点得文章  “The Key To Accelerating Your Coding Skill">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.yangxu.xyz/2019/06/30/Programmer-leveling-guide-official-entry/">
+
+
+
+
+
+  <title>程序员练级攻略：正式入门学习总结 | 梦蝶的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梦蝶的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">这个世界上有两种人，一种是快乐的猪，一种是痛苦的人。做痛苦的人，不做快乐的猪。--苏格拉底</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/06/30/Programmer-leveling-guide-official-entry/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阳煦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦蝶的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">程序员练级攻略：正式入门学习总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-30T03:24:21+08:00">
+                2019-06-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/30/Programmer-leveling-guide-official-entry/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/30/Programmer-leveling-guide-official-entry/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>​    从这开始这个系列文章就不好写了，因为任务量太大了，会需要很多时间去阅读和消化文中材料，时间一长，反正也没有人看，就会容易懈怠，最终放弃。其次是这篇文章应该是针对Java web工程师写得，而我现在是python web实习生，所以我在内容上做了一些舍弃。</p>
+<p>下面就开始总结吧：</p>
+<p>起手就是一篇关于拐点得文章  “<em>The Key To Accelerating Your Coding Skills</em>”，这篇文章算是让我明白了为什么大厂们那么喜欢考察算法知识，以及简单描述了拐点前和拐点后的学习状态。</p>
+<blockquote>
+<p>This doesn’t mean you immediately “know” everything, but just that everything is now “figure-out-able,” so in essence, you are unstoppable.</p>
+<p> True confidence comes from struggling through a problem you have no idea how to solve, and discovering a solution on your own.</p>
+<p>You will never know everything you need to know to solve all your problems.</p>
+<p>Programming is a life-long learning experience. </p>
+<p>you should be seeking out problems that are outside your current skill set. This is the only way to build on and expand your skills.</p>
+<p>The web development inflection point is the point when you become capable of building any database-driven application that you want. </p>
+<p>The algorithm and data structures inflection point is a less superficial inflection point, but it is actually more important. </p>
+<p>Once a developer has passed both the web development inflection point and the algorithm and data structures inflection point, they hold the keys to the kingdom.</p>
+</blockquote>
+<p>《代码大全》我主要看了变量和语句两个部分，还有其他部分零零散散的章节。这本书真是编程细节之王了，它告诉你什么代码是错的，什么代码是对的，以及应该怎么做才是好的选择。其他章节大致看了看，感觉以后有了项目经验会收获更多，以后再看吧。</p>
+<p>在《java核心技术（卷1）》和《Head First Java》之间我最后选择了后者，不是因为前者贵（我买过），而是后者比前者的豆瓣分要高点。</p>
+<ol>
+<li><p>知识解释的非常详细，甚至是过于详细，恨不得把知识嚼烂了喂给你。所以你不太吃力就能弄懂知识，但是你自己的牙口没什么锻炼，理解的深度应该是不太够的。而且这种大幅度的解释，新手也许会很喜欢，但回头一想，你会发现，效率不是特别高。</p>
+</li>
+<li><p>课后习题，略有难度，但是挺锻炼脑子的逻辑能力和理解编译器的过程。如果非要挑刺的话，sharpen your pencil的题只有前面一小部分有答案，字谜题不太理解，我全部跳过了。小提示：题目运行一下就能得到答案哦，不要只在纸上做。</p>
+</li>
+<li><p>本书上的源码在网上也是比较好找到的，这样其实挺方便读者进行实践检验的。但是这本书的文本编辑方式和难度过大的项目，直接导致我没有怎么码代码。所以我现在总结，就会觉得我花一个多月来看这本书，但是我只是学会了看懂一些基本的Java代码和知识而已。</p>
+</li>
+<li><p>最后说说章节，前半段没什么好说的，我想说说后半部分，现在应该不会用书中方法来写图形界面了吧，应该都是用CMS来写，但是了解一下不是坏事。最后四章属于重要但是对于现阶段难以掌握的知识，会在之后的学习中，更加深入学习。</p>
+</li>
+<li><p>总的来说，这本书还是适合有大量时间的新手，但是你需要简单学习一下IDE。不然的话用文本编辑，实在是效率太低，没有学到什么代码工程能力，且极容易被劝退。</p>
+</li>
+</ol>
+<p>我估计我以后还是要再去学学，下次可能就会去看《Java核心技术（卷1）》了吧，Java还是要好好学的，因为我去看数据结构和算法的书的时候，发现很多书都是用Java实现的。从工作上看，Java的岗位还是要比其他语言还是要多点的。我是机缘巧合找到了python web的实习，就决定Spring先放一放了，大家都是做web的话，学习哪一个都一样。</p>
+<p>《鸟哥的Linux私房菜》这本书可能是中文教Linux最好的书了，但还是大大小小有不少的坑。</p>
+<ol>
+<li>简体版和繁体版，简体版的翻译是丢失了一些原版的意思的，如果你从来不看繁体书，突然让你去看繁体书，你会发现繁体是真得影响阅读速度，以我自己的感觉还是老老实实看简体版吧，效率会高些，丢失原意是翻译书不可避免的。</li>
+<li>教的系统是CentOS，这其实不太主流，我发现学生中Linux系统还是以学Ubuntu为主。所以你大可放弃书中安装系统那章，去网上找一篇安装Ubuntu的攻略，也不是那么难的。</li>
+<li>这本书整体是偏向于Linux系统管理和运维的，作者应该是从事这个方向工作的，所以整体上会偏向这个方向，无可厚非。但是对于读者来说其实会有点点痛苦，特别是书中的第四、五部分，这个部分大概看看吧，实在受不了就跳过不看吧。</li>
+<li>这本书其实知识细节太多了，对于学习能力比较强的人是一种限制。你学到最后会发现，只要学会了man命令和了解Linux的基础命令，是比书中这种事无巨细的介绍学习效率要高的。可能最好的Linux资料都是在线文档吧，书籍做到这种程度已经不容易了。</li>
+</ol>
+<p>MDN的HTTP文档</p>
+<p>我一开始以为这么早接触网络协议是不是有点早，但是我在实习中发现了解Http中最关键的知识还是必要的，不然返回码都看不懂，那是真的惨。</p>
+<p>数据库设计</p>
+<ol>
+<li>数据库设计的那些事，算是让我知道了什么是范式以及基础的数据库知识，但是这个视频教程的内容是远远不够的。</li>
+<li>《MySQL必知必会》从第一章到第17章我都操作实践过，操作起来感觉还蛮舒服的，但是可以感觉到离具体事务的操作还是有距离的，这部分算简单的入门操作指南吧。从第18章以后我就没有操作了，从这开始，内容开始偏向于数据库的管理，感觉大部分操作权限对于一般用户是拿不到的，所以我也只是看看理解就过了。总的来说，这是一本非常优秀的入门书了。</li>
+</ol>
+<p>前端方面</p>
+<p>JQuery和Bootstrap特别类似所以放在一起太适合不过了，而且这两个官方文档都是有中文的，如果你看不下去英文可以看中文的，如果你觉得官方文档太枯燥，不直观，也可以去看看菜鸟教程的文档，它的优点是在于每个小知识点都会有尝试一下，会让你直观的看到代码的效果。这两个的知识是不难懂，但是初学者用起来还是会懵一下的，我在实习中使用bootstrap就懵过。我试着简单解释怎么用bootstrap吧，我遇到两种使用方式：</p>
+<ol>
+<li>快速部署。 直接把官网中的css和js代码直接加到你的HTML代码中就会看到效果，优点就是快捷，缺点就是不能控制代码中细节，只能让你简单了解bootstrap吧。</li>
+<li>HTML模板，如果你能找到web后端实习或者是项目，你会发现你需要改别人写好的html模板，而模板中就会使用bootstrap，从使用框架的各个部分到自定义组件和布局，你会发现bootstrap无处不在。</li>
+</ol>
+<p>JavaScript 的 Promise 模式算是JS中的异步吧，可惜我JS学得很少，这个地方我看了几眼就跳过了。</p>
+<p>字符编码</p>
+<p>最简单的解释是字集码是把字符集中的字符编码为指定集合中某一对象（例如：比特模式、自然数序列、8位组或者电脉冲），以便文本在计算机中存储和通过通信网络的传递。尽管现在基本上已经是无脑使用UTF-8了，但是偶尔还是会出现乱码问题。</p>
+<p>IDE </p>
+<p>现在Java最主流的IDE应该是idea了，Eclipse会显得久了一点，Visual Studio Code的问题是它新了，新到不完善，Vs Code现在主要还是用在前端，python，C++和Java都能支持了，但是目前功能还不比不上idea和pycharm。jetbrains一家的IDE都差不太多，学了idea的文档，很多通用功能也可以用在pycharm上，这算个隐藏福利吧。</p>
+<p>版本管理器</p>
+<p>其实推荐的两个都不太好吧，Pro Git太厚了，内容太多了，不需要学这么都就可以用的。而 猴子都能懂得Git入门 则是旧了点，攻略中推荐得工具很难用。这里我会推荐廖雪峰老师得Git入门教程。目前，我在IDE用到得Git代码不会超过Git入门教程，而且难度适宜，手把手得教你用git。</p>
+<p>超完整的Chrome浏览器客户端调试大全，其实后端不需要知道这么多，知道基本的就够了，毕竟后端是不写JS的，但是前端的话还是要好好看看的。</p>
+<p>MySQL WorkBench，大致看了看是可视化数据库管理器，和pgadmin差不多，我就没有下载了，以后用到了在去下载吧。</p>
+<p>实践项目，没有什么时间和精力，就跳过吧。不过说实话，这个实践项目不是那么简单，我实习快两个月了，到现在我做登录页面还是没独立做出来过，这个难点是交互的表单。哎，我太菜了吧。</p>
+<p>不知不觉，从我决定转行到现在也有个半年了吧。学了很多，但是发现自己不知道的也有很多，也算是更加了解了计算机这一行. 我会学到什么地步呢？我能到达什么高度呢?  我对技术的热情会保持多久呢？ 不知道，那就继续干吧！ </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/26/June-16-to-June-23/" rel="next" title="6月16日到6月23日记录">
+                <i class="fa fa-chevron-left"></i> 6月16日到6月23日记录
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/30/June-24-june-29-record/" rel="prev" title="6月24日到6月29日记录">
+                6月24日到6月29日记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">阳煦</p>
+              <p class="site-description motion-element" itemprop="description">做自己认为正确的事</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yangxuyu" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.douban.com/people/75913861" target="_blank" title="Douban">
+                      
+                        <i class="fa fa-fw fa-user-circle"></i>Douban</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">阳煦</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zU1etowok6uAFkzdsfCmkMks-gzGzoHsz',
+        appKey: 'GRHcnkdFMMFrCEAiqIBmQJcE',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
