@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="梦蝶的博客">
 <meta property="og:description" content="从7月3日开始吧， 布老师布置了任务，做十个页面其中最少三个页面是有交互内容。 做页面的思路流程：先copy到wagtail中，去除那些不需要的部分。也就是已经写在homepage中的块。这个时候也页面已经可以渲染一个静态页面了。然后在看能不能抽象成一个block，最好抽象的是文本框和组件。在到models里面去写需要的block和fields,最后写出models对应的HTML文件。 当然以上只">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-04T09:58:08.607Z">
+<meta property="og:updated_time" content="2019-08-26T14:32:10.421Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="七月总结">
 <meta name="twitter:description" content="从7月3日开始吧， 布老师布置了任务，做十个页面其中最少三个页面是有交互内容。 做页面的思路流程：先copy到wagtail中，去除那些不需要的部分。也就是已经写在homepage中的块。这个时候也页面已经可以渲染一个静态页面了。然后在看能不能抽象成一个block，最好抽象的是文本框和组件。在到models里面去写需要的block和fields,最后写出models对应的HTML文件。 当然以上只">
@@ -190,6 +190,16 @@
         </li>
       
         
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
@@ -272,6 +282,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/每周记录/" itemprop="url" rel="index">
+                    <span itemprop="name">每周记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -315,12 +347,12 @@
 
       
         <p>从7月3日开始吧， 布老师布置了任务，做十个页面其中最少三个页面是有交互内容。</p>
-<p>做页面的思路流程：先copy到wagtail中，去除那些不需要的部分。也就是已经写在homepage中的块。这个时候也页面已经可以渲染一个静态页面了。然后在看能不能抽象成一个block，最好抽象的是文本框和组件。在到models里面去写需要的block和fields,最后写出models对应的HTML文件。</p>
+<p>做页面的<strong>思路流程</strong>：先copy到wagtail中，去除那些不需要的部分。也就是已经写在homepage中的块。这个时候也页面已经可以渲染一个静态页面了。然后在看能不能抽象成一个block，最好抽象的是文本框和组件。在到models里面去写需要的block和fields,最后写出models对应的HTML文件。</p>
 <p>当然以上只是适合初学者，因为熟悉了以后，根本不需要固定的处理流程。初学者还是非常需要处理流程的。 </p>
-<p>头个两个星期我主要花了大量时间在看Django的文档，form，auth， url, 码代码的时间倒不是那么多，把form page做出来的时候是真得有满足感。接着就是想去做登录，注册，忘记密码功能，这个地方看了几天的文档，当时还是实现不了，后来布老师告诉我应该在这些功能写在根url下，而不是在某个app的url下。</p>
+<p>头个两个星期我主要花了大量时间在看<strong>Django的文档</strong>，form，auth， url, 码代码的时间倒不是那么多，把form page做出来的时候是真得有满足感。接着就是想去做登录，注册，忘记密码功能，这个地方看了几天的文档，当时还是实现不了，后来布老师告诉我应该在这些功能写在根url下，而不是在某个app的url下。</p>
 <p>然后就是休息了一个星期，回家看看家人，长辈，就回来了。</p>
 <p>最后一周的工作就是对比了两款摹课应用，研究了下jet-admin,以及Django rest framework。</p>
-<p>总结：</p>
+<p><strong>总结：</strong></p>
 <ol>
 <li><p>看文档是边学边看，布老师看了三十多遍Django文档不是一边又一边的看，是一种循环上升的过程。</p>
 </li>
@@ -452,12 +484,21 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
             
 
             
