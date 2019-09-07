@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="这两周主要就是再开发了小程序的功能，虽说是开发，但是主要工作还是在改demo，以及把别的小程序上的功能移植到demo中。主要还是小程序的开发环境太乱了，现在就是小程序攻防战，整个移动端都打成了一锅粥。 我实习的公司，打算采用Vue架构的uni-app进行开发小程序，然后在通过转义，使小程序可以在H5和微信小程序上使用。但是我用的时候遇到过一个开发环境和生成环境的区分的问题，最后我得到结论是uni-">
+<meta name="description" content="这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看Development和Production。 我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。 可惜我得到的结论是：在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和produ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="八月第三，四周总结">
-<meta property="og:url" content="http://www.yangxu.xyz/2019/08/27/Aug-19-to-Aug-30-record/index.html">
+<meta property="og:title" content="能否在uni-app中区分开发和生产环境">
+<meta property="og:url" content="http://www.yangxu.xyz/2019/09/07/uni-app-devolop-and-product/index.html">
 <meta property="og:site_name" content="梦蝶的博客">
-<meta property="og:description" content="这两周主要就是再开发了小程序的功能，虽说是开发，但是主要工作还是在改demo，以及把别的小程序上的功能移植到demo中。主要还是小程序的开发环境太乱了，现在就是小程序攻防战，整个移动端都打成了一锅粥。 我实习的公司，打算采用Vue架构的uni-app进行开发小程序，然后在通过转义，使小程序可以在H5和微信小程序上使用。但是我用的时候遇到过一个开发环境和生成环境的区分的问题，最后我得到结论是uni-">
+<meta property="og:description" content="这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看Development和Production。 我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。 可惜我得到的结论是：在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和produ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-06T17:58:50.554Z">
+<meta property="og:updated_time" content="2019-09-07T16:53:10.879Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="八月第三，四周总结">
-<meta name="twitter:description" content="这两周主要就是再开发了小程序的功能，虽说是开发，但是主要工作还是在改demo，以及把别的小程序上的功能移植到demo中。主要还是小程序的开发环境太乱了，现在就是小程序攻防战，整个移动端都打成了一锅粥。 我实习的公司，打算采用Vue架构的uni-app进行开发小程序，然后在通过转义，使小程序可以在H5和微信小程序上使用。但是我用的时候遇到过一个开发环境和生成环境的区分的问题，最后我得到结论是uni-">
+<meta name="twitter:title" content="能否在uni-app中区分开发和生产环境">
+<meta name="twitter:description" content="这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看Development和Production。 我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。 可惜我得到的结论是：在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和produ">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://www.yangxu.xyz/2019/08/27/Aug-19-to-Aug-30-record/">
+  <link rel="canonical" href="http://www.yangxu.xyz/2019/09/07/uni-app-devolop-and-product/">
 
 
 
 
 
-  <title>八月第三，四周总结 | 梦蝶的博客</title>
+  <title>能否在uni-app中区分开发和生产环境 | 梦蝶的博客</title>
   
 
 
@@ -242,7 +242,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/08/27/Aug-19-to-Aug-30-record/">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/09/07/uni-app-devolop-and-product/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="阳煦">
@@ -259,7 +259,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">八月第三，四周总结</h1>
+          <h1 class="post-title" itemprop="name headline">能否在uni-app中区分开发和生产环境</h1>
         
 
         <div class="post-meta">
@@ -271,8 +271,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-27T12:07:41+08:00">
-                2019-08-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-07T17:40:21+08:00">
+                2019-09-07
               </time>
             
 
@@ -294,8 +294,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/每周记录/" itemprop="url" rel="index">
-                    <span itemprop="name">每周记录</span>
+                  <a href="/categories/杂谈/" itemprop="url" rel="index">
+                    <span itemprop="name">杂谈</span>
                   </a>
                 </span>
 
@@ -312,8 +312,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/08/27/Aug-19-to-Aug-30-record/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/27/Aug-19-to-Aug-30-record/" itemprop="commentCount"></span>
+                <a href="/2019/09/07/uni-app-devolop-and-product/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/07/uni-app-devolop-and-product/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -341,41 +341,11 @@
       
 
       
-        <p>这两周主要就是再开发了小程序的功能，虽说是开发，但是主要工作还是在改demo，以及把别的小程序上的功能移植到demo中。主要还是小程序的开发环境太乱了，现在就是小程序攻防战，整个移动端都打成了一锅粥。</p>
-<p>我实习的公司，打算采用Vue架构的uni-app进行开发小程序，然后在通过转义，使小程序可以在H5和微信小程序上使用。但是我用的时候遇到过一个开发环境和生成环境的区分的问题，最后我得到结论是uni-app是不能区分。这个时候，我就有点凌乱了，以uni-app为例的小程序框架即没有完整Vue/react框架功能，同时在开放小程序的功能，还要把小程序的语法，乃至API的用法都要改成Vue的写法，你知道这对于一个intern是多么的困惑吗？脑子都成了浆糊了。我还是希望小程序的文档和功能在完善完善，以后就直接在原生态上开发，然后再实现小程序转H5,把这些框架都给弄没了。</p>
-<p>开发的功能：</p>
-<ol>
-<li>绑定手机号：需要小程序企业认证，所以没有验证是否能正常使用。</li>
-<li>意见反馈： 算是做了个纯页面，其实信息并没有能够提交。</li>
-<li>扫一扫：使用官方API，未能成功将其改写成Vue。</li>
-<li>申请开票和开票记录： 也只是做了纯页面，没有实现信息交互。</li>
-<li>关于我们和拨打客服电话： 可以使用。</li>
-<li>生成二维码： 可以使用。</li>
-</ol>
-<p>每周阅读：</p>
-<ol>
-<li><p><a href="http://www.ruanyifeng.com/blog/2019/08/weekly-issue-71.html" target="_blank" rel="noopener">科技爱好者周刊：第 71 期</a></p>
-</li>
-<li><p><a href="http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html" target="_blank" rel="noopener">如何选择开源许可证</a></p>
-</li>
-<li><p><a href="https://v.youku.com/v_show/id_XNDMyMzg4NDIwMA==.html?refer=seo_operation.liuxiao.liux_00003310_3000_nUF3ai_19042900" target="_blank" rel="noopener">圆桌派 第四季：买单：逃单、抢单 饭桌见世情</a> </p>
-</li>
-<li><p><a href="https://www.changhai.org/articles/science/physics/Hilbert_and_GR.php" target="_blank" rel="noopener">希尔伯特与广义相对论场方程</a> </p>
-<p>卢老师的文章，还是那么有理有据，令人信服。希尔伯特与爱因斯坦，但凡你知道这二位各自在数学界和物理界影响之大，我想这篇你一定会喜欢。</p>
-</li>
-<li><p><a href="http://weiwuhui.com/8058.html" target="_blank" rel="noopener">我眼中的师生关系</a></p>
-<p>我以前觉得大学里面的师生之情非常淡薄，看了这篇文章之后，算是知道了，大学里的师生关系不但淡薄，甚至是紧张的。</p>
-</li>
-<li><p><a href="https://www.ifanr.com/1253696" target="_blank" rel="noopener">马云 VS 马斯克对话全文实录</a></p>
-<p>先说总体感觉，两个大佬根本就没有聊到一起去，这次对话是一次没有对撞的交流，你说一句西他说一句东。这次对话，我有感触的是马斯克说得：“我认为在未来不会有人工智能的专业人士”。这句话没有问题，但是得先有大量且高素质的AI工程师，才能到达这一步。</p>
-<p>再说个题外话，我认识所有转行CS的人全都是转的AI方向，对，你没有看错，是所有。无论是师兄，还是同学。甚至已经在CS方向的学术界和业界都在望AI转，我们就等着潮水退去的那一天吧。</p>
-</li>
-</ol>
-<p>每周一句：</p>
-<ol>
-<li>搞科学的很多情商低。但是混的风生水起的，很多只是对“对自己没有用的人”表现出情商低。你时常可以看到平时摆着一张臭脸的杰青，面对杰青时候的一脸春风。——派老师</li>
-<li>情感分析的文本其实笨笨的，因为同一句话，用不同的情感表达会得到完全不一样的效果，比如你真好。这一句话，重音在“真”和重音在“好”上完全是两个意思呀。这么看来NLP也挺难受的，因为它缺信息了，缺了表达中的语气。</li>
-</ol>
+        <p>这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看<a href="https://webpack.js.org/guides/development/" target="_blank" rel="noopener">Development</a>和<a href="https://webpack.js.org/guides/production/" target="_blank" rel="noopener">Production</a>。</p>
+<p>我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。</p>
+<p>可惜我得到的结论是：<strong>在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和product环境使用。</strong>因为需要<a href="https://webpack.js.org/guides/public-path/#root" target="_blank" rel="noopener">publicPath</a>来实现为项目中的所有资源指定一个基础路径。通常是设置一个名为 ASSET_PATH的变量，但是可以在uni-app文档中的<a href="https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">vue-config.js</a>发现，对于publicPath 并不能支持，那么就没有办法来提供一个基础路径。</p>
+<p><a href="https://github.com/dcloudio/uni-app/issues/148" target="_blank" rel="noopener">Feature Request自定义配置功能增强 #148</a> github中的uni-app的Issues中也提过类似的问题，其中排名第一的贡献者fxy060608，也表达了目前是不能实现该功能的。</p>
+<p>但是也不是说就没有办法了，微信小程序文档中的<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/qcloud/material.html" target="_blank" rel="noopener">素材管理</a>，因为我不能进这个小程序的后台，所以我就没有进行后续的操作，但是它可以为开发者提供了腾讯云的”对象存储（COS）” 和 “内容分发网络（CDN）” 的产品功能。那么我们可以把本地当作当作开发环境，把云开放文件存储当作生成产环境。但是和webpack提供的开发和生产环境的差异小很多，相当于只能提供静态文件的差异。主要原因还是在于uni-app,提供的wepack功能太少了。</p>
 
       
     </div>
@@ -400,8 +370,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/18/Aug-11-to-Aug-18-record/" rel="next" title="八月第二周记录">
-                <i class="fa fa-chevron-left"></i> 八月第二周记录
+              <a href="/2019/09/05/some-advises-to-my-sister/" rel="next" title="给妹妹的一些建议">
+                <i class="fa fa-chevron-left"></i> 给妹妹的一些建议
               </a>
             
           </div>
@@ -409,10 +379,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/05/some-advises-to-my-sister/" rel="prev" title="给妹妹的一些建议">
-                给妹妹的一些建议 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
