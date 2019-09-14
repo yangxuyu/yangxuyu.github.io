@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="What are some of the most basic things every programmer should know?，我也就贴个高赞答案在这吧，大家都知道Quora是原版的知乎，现在知乎是一点都不值得看了，但Quora说实话也不怎么火了，感觉很多国外的内容创作者也离开了这个平台。   Bad architecture causes more problems than bad">
+<meta property="og:type" content="article">
+<meta property="og:title" content="程序员练级攻略：程序员修养学习总结">
+<meta property="og:url" content="http://www.yangxu.xyz/2019/09/15/programmer-leveling-guide-programmer-cultication/index.html">
+<meta property="og:site_name" content="梦蝶的博客">
+<meta property="og:description" content="What are some of the most basic things every programmer should know?，我也就贴个高赞答案在这吧，大家都知道Quora是原版的知乎，现在知乎是一点都不值得看了，但Quora说实话也不怎么火了，感觉很多国外的内容创作者也离开了这个平台。   Bad architecture causes more problems than bad">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-09-14T20:51:36.278Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="程序员练级攻略：程序员修养学习总结">
+<meta name="twitter:description" content="What are some of the most basic things every programmer should know?，我也就贴个高赞答案在这吧，大家都知道Quora是原版的知乎，现在知乎是一点都不值得看了，但Quora说实话也不怎么火了，感觉很多国外的内容创作者也离开了这个平台。   Bad architecture causes more problems than bad">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.yangxu.xyz/2019/09/15/programmer-leveling-guide-programmer-cultication/">
+
+
+
+
+
+  <title>程序员练级攻略：程序员修养学习总结 | 梦蝶的博客</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">梦蝶的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">这个世界上有两种人，一种是快乐的猪，一种是痛苦的人。做痛苦的人，不做快乐的猪。--苏格拉底</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/09/15/programmer-leveling-guide-programmer-cultication/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阳煦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梦蝶的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">程序员练级攻略：程序员修养学习总结</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T04:46:13+08:00">
+                2019-09-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/程序员练级攻略/" itemprop="url" rel="index">
+                    <span itemprop="name">程序员练级攻略</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/09/15/programmer-leveling-guide-programmer-cultication/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/15/programmer-leveling-guide-programmer-cultication/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><a href="https://www.quora.com/What-are-some-of-the-most-basic-things-every-programmer-should-know" target="_blank" rel="noopener"><strong>What are some of the most basic things every programmer should know?</strong></a>，我也就贴个高赞答案在这吧，大家都知道Quora是原版的知乎，现在知乎是一点都不值得看了，但Quora说实话也不怎么火了，感觉很多国外的内容创作者也离开了这个平台。</p>
+<blockquote>
+<ol>
+<li>Bad architecture causes more problems than bad code.</li>
+<li>You will spend more time thinking than coding.</li>
+<li>The best opportunity to get paid more is when you’re negotiating salary before getting hired.</li>
+<li>People skills determine your success more than technical skills.</li>
+<li>Users will find impressive and bizarre ways to solve their own problems.</li>
+<li>Commit code more often.</li>
+<li>Always work in feature branches.</li>
+<li>Basic UNIX skills are helpful, but not required.</li>
+<li>Learning VIM or EMACS will change your world.</li>
+<li>All estimates are lies and “good estimates” are bigger lies.</li>
+<li>80% of programmers are barely capable of doing their job.</li>
+<li>Businesses exist to make money, not to make code.</li>
+<li>Software exists to solve problems, it’s not art.</li>
+<li>Agile is a trap. You can’t avoid it.</li>
+<li>80% of programmers never invest in improving their skills and never learn outside of work.</li>
+<li>Your boss believes you are replaceable.</li>
+<li>Work is a job, not a family, not a church, not a religion. You do it to get paid.</li>
+<li>Company culture is often used as a trick to pay you less money.</li>
+<li>The best programmers are always building things.</li>
+<li>Your IDE doesn’t matter.</li>
+<li>The language you use doesn’t matter.</li>
+<li>The framework you use doesn’t matter.</li>
+<li>All technology arguments boil down to children fighting over which toy to play with.</li>
+<li>You probably won’t get rich by winning the startup lottery.</li>
+<li>Make friends with QA testers, they will make your life better.</li>
+<li>Always know how your business makes money, that determines who gets paid what.</li>
+<li>If you want to feel important as a software developer, work at a tech company.</li>
+<li>People will always prioritize new features over refactoring legacy code.</li>
+<li>Sometimes a train wreck has to happen for anyone to care about the brakes.</li>
+</ol>
+</blockquote>
+<p><a href="https://97-things-every-x-should-know.gitbooks.io/97-things-every-programmer-should-know/content/en/index.html" target="_blank" rel="noopener"><strong>97 Things Every Programmer Should Know</strong></a>，这篇文章内容是蛮多的，所以我一般会先看标题，看的懂得话就跳过了。如果标题看不懂了，才会看看内容，看看文章表达的意思。</p>
+<p><strong>英文能力</strong></p>
+<ol>
+<li><p>我自己用过几次英文搜索后，尝到甜头后，我就尽量用英文搜索问题了。关于IT问题，英文和中文的互联网就是天差地别啊。现在搜索引擎这么智能的情况下，你只要会最简单的疑问句语法就可以遨游了。</p>
+</li>
+<li><p>用英文写注释，commit，Issue和Pull Requ，以及Wiki都是短句，对于我主要还是心理障碍，真写起来也就会有些小问题罢了，谷歌翻译就能解决了~</p>
+</li>
+<li><p>YouTube上看5分钟，其实就是为了练听力，让自己保持英文的输入，千万不能对英文生疏。</p>
+</li>
+<li><p>字典我喜欢用朗文的LODCE5，搭配着用欧陆词典，电脑端查单词，再手机上背生词，方便。</p>
+</li>
+<li><p>英文教材的话，我比较喜欢用恶魔的奶爸推荐的教程，不过他的学习路径还是以听力为核心的，需要花很多很多时间去练耳朵。</p>
+</li>
+<li><p>最终还是要通过老外来检测和提高自己的能力，大不了就花些钱嘛。</p>
+<p>这里有一个隐含的能力要求：科学上网。对于这个，我只能说你要你想，这个能力你就可以掌握。去搜索吧。</p>
+</li>
+</ol>
+<p><strong>问问题的能力</strong></p>
+<p>学会问问题是一个非常非常重要的能力，因为大多数情况下别人是不知道你的工作细节的，别人只能通过你的问题来帮助你。一旦你的问题问偏了，别人的回答再怎么正确都帮助不到你，这是我实习阶段学到的教训。</p>
+<p><a href="http://doc.zengrong.net/smart-questions/cn.html#before" target="_blank" rel="noopener"><strong>《提问的智慧》</strong></a></p>
+<blockquote>
+<p>我们回答问题的风格是为了适应那些<em>真正</em>对此有兴趣并愿意主动参与解决问题的人</p>
+</blockquote>
+<p>上面这句话是我觉得这篇文章的核心，我会把这句话牢牢记在心中。我遇到实际问题时，操作流程是先“读读该死的手册”（RTFM）和“搜搜该死的网络”（STFW），再去“提问前”，最后才是“提问时”。</p>
+<p><a href="https://coolshell.cn/articles/10804.html" target="_blank" rel="noopener">《X-Y 问题》</a> </p>
+<blockquote>
+<p><strong>没有去问怎么解决问题X，而是去问解决方案Y应该怎么去实现和操作</strong>。X-Y Problem最大的严重的问题就是：<strong>在一个根本错误的方向上浪费他人大量的时间和精力</strong>！</p>
+</blockquote>
+<p><a href="https://meta.stackexchange.com/questions/7931/faq-for-stack-exchange-sites" target="_blank" rel="noopener">FAQ for Stack Exchange sites</a></p>
+<p>这个虽然是针对Stack Exchange sites的常见问题和回答，但可以把它看作对所有社区问答的规范参考。Asking questions中的前两个，是对我帮助最大的。</p>
+<p><strong>写代码的修养</strong></p>
+<p>《重构》、《修改代码的艺术》和《代码整洁之道》，我打算以后再看了，因为我在看了一段时间后发现我对这块知识掌握的不好。我承认代码是需要整洁、健壮性和鲁棒性的。但是对于现阶段的我来说，我的代码量还是太少了。现在的我的代码是去从零到一的过程（实现功能），是把官方文档和别人的代码改写成自己的代码，等过一段时间再看吧。</p>
+<p>《程序员的职业素养》这本书不单单让你知道成为一名专业的程序员需要什么样的态度、原则，需要采取什么样的行动。它还会帮助你成为更好的一个人。</p>
+<p><strong>Code Review</strong></p>
+<p>这几篇文章算是开开视野，看看别人是怎么做Code Review的，我一开始是在业务性公司实习，他们好像还真得不做Code Review。不过我的leader,他有空的时候会帮我看看，但他有空的时候不多。下份工作，找一个能做Code Review的公司吧。</p>
+<p><strong>Unit Test</strong></p>
+<p>JUnit是大多数Unit Test的框架衍生出来的，最起码unit test就是。因为我一直在做Python web的工作，我就没有去看JUnit了。我去看了 <a href="https://docs.python.org/zh-cn/3.6/library/unittest.html#basic-example" target="_blank" rel="noopener">unittest — 单元测试框架</a> 和 <a href="https://youtu.be/1Lfv5tUGsn8" target="_blank" rel="noopener">Unit Tests in Python</a> 。这样的学习也只是粗浅的了解。要是想要深入掌握，还是要在工作中，去理解实际的代码以及Unit test的代码，并且将它们结合起来。</p>
+<p><strong>安全防范</strong></p>
+<p>虽然说是OWASP中的top10都是需要避免的，但是我感觉XXS,CSRF和SQL注入是最重要的吧，或者说是考察最多的。</p>
+<p>Guideline倒是没怎么看懂。</p>
+<p><a href="https://www.keycdn.com/blog/http-security-headers#2-x-xss-protection" target="_blank" rel="noopener">Hardening Your HTTP Security Headers </a> 安全表头，文章大概是先解释了各个表头以及怎么在Nginx和Apache中使用，最后就是教了三种检查http安全表头的方法。</p>
+<p><strong>防御性编程</strong>（Defensive programming）</p>
+<p>是防御式设计的一种具体体现，它是为了保证，对程序的不可预见的使用，不会造成程序功能上的损坏。它可以被看作是为了减少或消除墨菲定律效力的想法。防御式编程主要用于可能被滥用，恶作剧或无意地造成灾难性影响的程序上。</p>
+<p>维基上的那个例子其实我没看太懂。不过，我举个例子：web的手机验证码登录，会限制输入上限为6位，超过的部分就不能输入了，这个应该算是防御性编程吧。</p>
+<p><a href="https://medium.com/web-engineering-vox/the-art-of-defensive-programming-6789a9743ed4" target="_blank" rel="noopener">The Art of Defensive Programming</a> </p>
+<p>记几句，我觉得有点意思的句子，后几个建议在《代码大全》里见过，就不记了。</p>
+<blockquote>
+<p>Defend against the impossible, because the impossible will happen.</p>
+<p>Never trust user input</p>
+<p> Assert that your input values are what you expect.</p>
+<p>Use database abstraction</p>
+</blockquote>
+<p><a href="https://medium.com/@vcarl/overly-defensive-programming-e7a1b3d234c2" target="_blank" rel="noopener">Overly defensive programming</a>  这篇说实话，我看的不太懂，代码也不懂，大意是过度防御编程？</p>
+<p><strong>软件工程和上线</strong></p>
+<p>《完美软件》这本书挺难买的，甚至连电子版我都没有找到，只能搁置一旁，以后有机会再看了。</p>
+<p>《Google软件测试之道》 不是技术为核心的公司是做不到这样的，而且测试在中国的程序员中的地位和作用太低了，而谷歌对测试要求基本是一个会研发的产品经理，然后这个人的主要工作是测试，这怎么说理去呢。这本书我收获最大的应该是，要不择手段的提高工作效率。其次的话，就是了解了谷歌的工作方式。</p>
+<p>Checklist，是我以前没有意识到的，没有想到上线还是需要进行一系列的检查的。而且其中检查我也不是完全都懂，算是了解吧，还是得上线一个应用，这个过程才能完全掌握吧。</p>
+<p><a href="https://www.datadoghq.com/blog/monitoring-101-collecting-data/" target="_blank" rel="noopener">Monitoring 101: Collecting the right data</a></p>
+<blockquote>
+<p>Collecting data is cheap, but not having it when you need it can be expensive, so you should instrument everything, and collect all the useful data you reasonably can.</p>
+</blockquote>
+<p> 我以前，出了问题大概就会说，看日志啊。这篇才是真的看日志。最少算是知道了：工作指标，资源指标，事件，以及什么才是值得收集的好数据，警报和诊断数据。</p>
+<p><strong>编程规范</strong></p>
+<p>现在基本都是靠着IDE来管理，但是有空还是要看一下的，我觉得倒不是都要看，这个真的是可以要用的时候再去看就可以了。因为你得先把程序语言弄懂了，再去弄懂它的编程规范嘛。</p>
+<p>最后说说开发工具： </p>
+<ol>
+<li><p>Markdown：现在文章基本都是采用md格式。 </p>
+</li>
+<li><p>JSON：你会在无数地方看到数据以这种形式来存储。</p>
+</li>
+<li><p>Git：代码管理以及合作开发都靠它。  </p>
+</li>
+<li><p>正则表达：我是在写URL和爬虫中用到过它，检索和替换全靠它。</p>
+<p>这四个在编程中都是很重要的，都是属于那种你需要知道最基础的知识和用法，但是仅此是不够的。一旦深入用起来，还是要查文档，边学边用。同时，这也是我对这一篇文章的整体印象。</p>
+</li>
+</ol>
+<p>总的来说，这篇程序员修养是挺奇怪的，它不算程序员的内功，也不算外功。但是你看过之后，好像每个知识点还真得都知道。</p>
+<p>接下来，我要去补基础了，我要去啃计算机专业最难却也是最精华的知识了。想想还有些小激动…</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/08/September-1-to-september-8-record/" rel="next" title="9月第一周总结">
+                <i class="fa fa-chevron-left"></i> 9月第一周总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">阳煦</p>
+              <p class="site-description motion-element" itemprop="description">做自己认为正确的事</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/yangxuyu" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.douban.com/people/75913861" target="_blank" title="Douban">
+                      
+                        <i class="fa fa-fw fa-user-circle"></i>Douban</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">阳煦</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'zU1etowok6uAFkzdsfCmkMks-gzGzoHsz',
+        appKey: 'GRHcnkdFMMFrCEAiqIBmQJcE',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

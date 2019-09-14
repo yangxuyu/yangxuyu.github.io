@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="梦蝶的博客">
 <meta property="og:description" content="这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看Development和Production。 我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。 可惜我得到的结论是：在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和produ">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-07T16:53:10.879Z">
+<meta property="og:updated_time" content="2019-09-07T19:50:30.833Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="能否在uni-app中区分开发和生产环境">
 <meta name="twitter:description" content="这个需求是来在于Vue的功能，Vue利用webpage可以明确区分开发环境和生产环境，具体区别还是看Development和Production。 我的任务要求没有那么高，只是需要能够使用一个环境变量，区分开发环境和生产换环境中图片的使用，在开发时用本地静态文件，在生产时用服务器中的静态文件。 可惜我得到的结论是：在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和produ">
@@ -346,6 +346,7 @@
 <p>可惜我得到的结论是：<strong>在uni-app中目前是不能支持静态资源配置cdn的路径，以及区别dev和product环境使用。</strong>因为需要<a href="https://webpack.js.org/guides/public-path/#root" target="_blank" rel="noopener">publicPath</a>来实现为项目中的所有资源指定一个基础路径。通常是设置一个名为 ASSET_PATH的变量，但是可以在uni-app文档中的<a href="https://cli.vuejs.org/zh/config/#%E5%85%A8%E5%B1%80-cli-%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">vue-config.js</a>发现，对于publicPath 并不能支持，那么就没有办法来提供一个基础路径。</p>
 <p><a href="https://github.com/dcloudio/uni-app/issues/148" target="_blank" rel="noopener">Feature Request自定义配置功能增强 #148</a> github中的uni-app的Issues中也提过类似的问题，其中排名第一的贡献者fxy060608，也表达了目前是不能实现该功能的。</p>
 <p>但是也不是说就没有办法了，微信小程序文档中的<a href="https://developers.weixin.qq.com/miniprogram/dev/devtools/qcloud/material.html" target="_blank" rel="noopener">素材管理</a>，因为我不能进这个小程序的后台，所以我就没有进行后续的操作，但是它可以为开发者提供了腾讯云的”对象存储（COS）” 和 “内容分发网络（CDN）” 的产品功能。那么我们可以把本地当作当作开发环境，把云开放文件存储当作生成产环境。但是和webpack提供的开发和生产环境的差异小很多，相当于只能提供静态文件的差异。主要原因还是在于uni-app,提供的wepack功能太少了。</p>
+<p>Ps: webpack是目前我见过最黑科技的工具，它居然支持在开发环境中“热插拔”，这个功能以我的认知会带来很多麻烦，真是脑洞大开。神奇~</p>
 
       
     </div>
@@ -379,6 +380,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/08/September-1-to-september-8-record/" rel="prev" title="9月第一周总结">
+                9月第一周总结 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -449,7 +454,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
