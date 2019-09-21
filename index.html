@@ -505,7 +505,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/09/08/September-1-to-september-8-record/">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/09/08/September-1-to-september-15-record/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="阳煦">
@@ -524,7 +524,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/09/08/September-1-to-september-8-record/" itemprop="url">9月第一周总结</a></h1>
+                <a class="post-title-link" href="/2019/09/08/September-1-to-september-15-record/" itemprop="url">九月第一，二周总结</a></h1>
         
 
         <div class="post-meta">
@@ -547,6 +547,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/每周记录/" itemprop="url" rel="index">
+                    <span itemprop="name">每周记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -555,8 +577,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2019/09/08/September-1-to-september-8-record/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/08/September-1-to-september-8-record/" itemprop="commentCount"></span>
+                <a href="/2019/09/08/September-1-to-september-15-record/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/09/08/September-1-to-september-15-record/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -586,7 +608,18 @@
       
         
           
-            <p>每周阅读：</p>
+            <p>这两周的任务主要是爬虫，学习了Scrapy和Pyspide的官方文档。需求是爬领英上的个人页面的信息，因为爬虫是个灰色地带，对于Aon heweitt本身也是以数据起家的公司而言，信息一旦用作商用，绝对是违法的，实在是不值得冒这么大的风险，最终放弃了这项任务。但是经过两周的探索，遇到了一些问题就记录在这吧：</p>
+<ol>
+<li><p>第一个问题是领英的HTML是不能使用官方文档的方法下载，自然后续就不能从HTML中提取信息了。不过我看到有方法通过cookie下载，可惜我不太懂就算了。</p>
+</li>
+<li><p>爬不了领英，那我就去爬智联的招聘信息了。智联遇到的问题是子页面的信息要用parse函数传到主页面上去不然的话，子页面上的html上的信息是读取不到的。</p>
+</li>
+<li><p>最后的问题是，数据每次只能下载50条信息。我一开始没有用子页面的的信息时，是可以一次性下载完1000多条数据的，我估计可以通过sleep函数或者异步的方式可以解决这个问题。</p>
+<p>其实我还是很喜欢玩爬虫的，但是种种原因就没接着继续做下去。首先就是数据，招聘信息，这个数据你就是总结出了花都没什么用处，或者说这个信息没多大的利用价值。而且对于一个实习生，无论怎么说，公司都不应该给到核心数据。对于爬虫而言，没有好数据，后面做得再多，都是没用的。其次就是考虑到找工作，现在数据分析这个方向，人太多了（腾讯今年秋招报录比130：1），我现在还不想望这个方向去。</p>
+<p>后续我应该会继续做小程序，从前端到后台的API，包括域名和服务器。难是难了些，但是我还是很喜欢这个任务，因为如果能完成这个，我就相当于有能力独自的上线一个产品了，我很期待。</p>
+</li>
+</ol>
+<p>每周阅读：</p>
 <ol>
 <li><p><a href="http://www.ruanyifeng.com/blog/2019/09/weekly-issue-72.html" target="_blank" rel="noopener">科技爱好者周刊：第 72 期</a></p>
 </li>
