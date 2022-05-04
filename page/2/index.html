@@ -242,6 +242,349 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/08/02/june-30-to-july-31-record/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阳煦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阳煦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/02/june-30-to-july-31-record/" itemprop="url">七月总结</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-02T15:50:48+08:00">
+                2019-08-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/每周记录/" itemprop="url" rel="index">
+                    <span itemprop="name">每周记录</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/02/june-30-to-july-31-record/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/02/june-30-to-july-31-record/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>从7月3日开始吧， 布老师布置了任务，做十个页面其中最少三个页面是有交互内容。</p>
+<p>做页面的<strong>思路流程</strong>：先copy到wagtail中，去除那些不需要的部分。也就是已经写在homepage中的块。这个时候也页面已经可以渲染一个静态页面了。然后在看能不能抽象成一个block，最好抽象的是文本框和组件。在到models里面去写需要的block和fields,最后写出models对应的HTML文件。</p>
+<p>当然以上只是适合初学者，因为熟悉了以后，根本不需要固定的处理流程。初学者还是非常需要处理流程的。 </p>
+<p>头个两个星期我主要花了大量时间在看<strong>Django的文档</strong>，form，auth， url, 码代码的时间倒不是那么多，把form page做出来的时候是真得有满足感。接着就是想去做登录，注册，忘记密码功能，这个地方看了几天的文档，当时还是实现不了，后来布老师告诉我应该在这些功能写在根url下，而不是在某个app的url下。</p>
+<p>然后就是休息了一个星期，回家看看家人，长辈，就回来了。</p>
+<p>最后一周的工作就是对比了两款摹课应用，研究了下jet-admin,以及Django rest framework。</p>
+<p><strong>总结：</strong></p>
+<ol>
+<li><p>看文档是边学边看，布老师看了三十多遍Django文档不是一边又一边的看，是一种循环上升的过程。</p>
+</li>
+<li><p>让我做form page是为了让我能够理解数据是怎么从表单传送到数据库的。</p>
+</li>
+<li><p>表单中<a href="https://docs.djangoproject.com/zh-hans/2.2/topics/forms/#html-forms" target="_blank" rel="noopener">action</a> 是指向URL的，还有就是要会用PyCharm中的Database.</p>
+</li>
+<li><p>介绍一个产品的时候，把自己当作一个销售人员，想想自己应该怎么销售这个产品，要知道买方的需求。比如：jet-admin，布老师就是想知道这个东西是怎么处理数据库的，安全性怎么样，这个是他最关心的。</p>
+<p>这个方法就是转换视角，到上级和客户的视角看问题。</p>
+</li>
+<li><p>一个技术人员永远不要说实现不了。好的技术人员是懂业务的关键点，好的业务人员也是懂技术的关键点。</p>
+</li>
+<li><p>互相有竞争关系且能力相当的人是做不成朋友的。</p>
+</li>
+</ol>
+<p>本月阅读：</p>
+<ol>
+<li><p><a href="https://tingyuan.me/chinese-programmer-wrong-pronunciation/" target="_blank" rel="noopener">中国程序员容易发音错误的单词</a> 这个还是值得去纠正一下的。‘</p>
+</li>
+<li><p><a href="http://www.ruanyifeng.com/blog/2019/08/weekly-issue-67.html" target="_blank" rel="noopener">科技爱好者周刊：第 67 期</a> 这个就是每周当个乐子。</p>
+</li>
+<li><p><a href="https://list.youku.com/show/id_zfdedd2bd7e974b899cc2.html" target="_blank" rel="noopener">圆桌派 第四季</a> “执生”和星婚还有熟人，这三集是我觉得比较好看的。能学到对社会的认知的节目，真是太稀少啦。</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/07/01/public-speaking-error/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阳煦">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阳煦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/01/public-speaking-error/" itemprop="url">常见公共演讲者的错误</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-01T01:33:41+08:00">
+                2019-07-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/杂谈/" itemprop="url" rel="index">
+                    <span itemprop="name">杂谈</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/01/public-speaking-error/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/01/public-speaking-error/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> 现在人人越来越有机会，去走上讲台，和别人分享自己的观点和故事。但是走上讲台并不代表着就能够说的好，  表现得好。常常会发现新手有如下错误：</p>
+<ol>
+<li>对自己的讲稿不熟悉，不能脱稿，表述不连贯。这是最最常见得问题了，每每听到这种演讲，会令听众十分痛苦，难以耐下性子去寻找作者的观点。但是这个问题并不难以解决，只要在正式演讲前，对着镜子或者在演讲地点练习，完全就可以解决这个问题。 </li>
+<li>与观众没有交流，只管自己讲自己的 ，目光不是对者地就是对着屏幕，从来不和观众对视。演讲应该是演讲者和听众一起完成的，没有听众参与的演讲都不能算得上演讲。可以通过提问问题和听众交流，哪怕只是是或不是的回答都可以。目光整体上是雨露均沾，但是到了某一个关键点应该对着某个人即可。   </li>
+<li>在不正式得地方穿正式的衣服，正式的地方穿不正式的衣服。这个问题会比其他问题要少得多。</li>
+<li>ppt的内容和自己的肢体语言不能很好的引导听众的注意力。ppt内容的过多和过少都会导致听众，难以引起观众的兴趣以及长久的注意力。</li>
+<li>普通话不标准以及乏力的情感表达。前一个问题在当今已经越来越少的人会犯前一个错误。但是后一个问题却是难以避免的，说话应该是有抑扬顿挫以及情感的表达的，你会看到太多太多的人在演讲时从头到尾只用一种语调。</li>
+</ol>
+<p>如果你想要改善以上这些问题，你得去演讲，然后发现问题，下次怎么去调整，继续去演讲。你会发现自己的演讲水平慢慢地变好了。</p>
+<p>相比而言你所表达的观点和逻辑的问题，倒是其次的，因为你会发现你的表达错误太多的话，很多人根本都不愿意听你说话，更别说听你的逻辑和观点了。等到有人指出你的观点的问题的时候，那你再自己就要批判性的接受喽。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/06/30/June-24-june-29-record/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1664,186 +2007,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.yangxu.xyz/2019/03/26/为什么我要搭博客呢/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="阳煦">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="阳煦的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/26/为什么我要搭博客呢/" itemprop="url">为什么我要搭博客呢?</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-26T23:27:31+08:00">
-                2019-03-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/杂谈/" itemprop="url" rel="index">
-                    <span itemprop="name">杂谈</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/03/26/为什么我要搭博客呢/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/03/26/为什么我要搭博客呢/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="为什么我要搭博客呢"><a href="#为什么我要搭博客呢" class="headerlink" title="为什么我要搭博客呢?"></a>为什么我要搭博客呢?</h1><p>我开始并没有想着搭一个个人博客,我只是想为了完成<a href="https://time.geekbang.org/column/article/8216" target="_blank" rel="noopener">程序员练级攻略：零基础启蒙</a>中的实践项目:</p>
-<blockquote>
-<p>无论你用 Python，还是 Node.js，还是 PHP，做一个非常简单的 Blog 系统或是 BBS 系统.</p>
-</blockquote>
-<p>但是我实践操作中</p>
-<ol>
-<li><p>BBS系统在在当下中文社区,已经几乎完全被用户所抛弃. </p>
-</li>
-<li><p>关于Node.js和PHP的知识我基本没有学习过. 直接放弃后两个选项.</p>
-</li>
-<li><p>对于Python语言,我看到的攻略大多是Django+Jekyll的方法,但是这个攻略对于python的版本,Django的版本要求很苛刻.以及Django1.0系列和Django2.0系列完全就是两个Web框架,导致我也放弃了这个.</p>
-</li>
-<li><p>本来至此我已经开始打算放弃搭博客了,但在浏览网页的过程中我看到了<a href="http://mindhacks.cn/2009/02/15/why-you-should-start-blogging-now/" target="_blank" rel="noopener">为什么你应该（从现在开始就）写博客</a>,我就继续坚持了会,在网上继续找了找别的搭博客的攻略,最终我用hexo+github搭建了这个博客.</p>
-</li>
-</ol>
-<p>虽然说我是把博客给搭出来了,但是回头看我的出发点,我并没有学会如何运用前端的知识以及学会独立搭建一个个人博客.</p>
-<h1 id="我是如何用hexo-github搭出博客"><a href="#我是如何用hexo-github搭出博客" class="headerlink" title="我是如何用hexo+github搭出博客"></a>我是如何用hexo+github搭出博客</h1><p>我是看着这篇文章:<a href="https://www.simon96.online/2018/10/12/hexo-tutorial/" target="_blank" rel="noopener">【持续更新】最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析</a><br>学会搭博客的,在这篇文章中我自己遇到两个小坑点.</p>
-<ul>
-<li><p>站点目录下的_config.yml文件中的URL会修改两次,第一次修改成username.github.io,第二次修改成你的域名.</p>
-</li>
-<li><p>域名解析信息我用的是username.github.io及其ip共两条信息,详见<a href="https://www.jianshu.com/p/a98985b2ac24" target="_blank" rel="noopener">github博客绑定个性域名</a></p>
-</li>
-</ul>
-<h1 id="最后在说几句"><a href="#最后在说几句" class="headerlink" title="最后在说几句"></a>最后在说几句</h1><p>我是个菜鸟新手,目前这个博客还十分粗糙,后续我会慢慢补全功能吧.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1889,7 +2057,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
